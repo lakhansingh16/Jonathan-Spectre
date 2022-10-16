@@ -1,0 +1,234 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&family=Prata&display=swap");
+/* font-family: 'Inter', sans-serif;
+font-family: 'Prata', serif; */
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+img{
+    max-width: 100%;
+}
+body,
+h1,
+p {
+  margin: 0;
+}
+body {
+  font-family: "Inter", sans-serif;
+}
+nav,
+.hero,
+.contact-area {
+  background-color: black;
+  color: white;
+}
+.about-cofounder,footer {
+  background-color: rgb(91, 89, 89);
+}
+
+nav,
+.hero,
+.contact-area,
+.about-cofounder{
+  padding: 2.5rem 4.5rem;
+}
+
+@media(max-width:440px){
+  nav,
+  .hero,
+  .contact-area,
+  .about-cofounder{
+    padding: 1.5rem 1.5rem;
+  }
+}
+
+a {
+  text-decoration: none;
+}
+
+nav {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.name-logo{
+  font-family: "Prata", serif;
+  font-weight: 500;
+  font-size: 1.3rem;
+}
+
+ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: space-between;
+}
+
+ul li {
+  padding: 0 0.7rem;
+}
+
+ul a {
+  color: white;
+}
+
+.get-in-touch {
+  background-color: rgb(184, 192, 73);
+  font-family: "Prata", serif;
+  padding: 0.8rem;
+}
+.get-in-touch a {
+  color: black;
+  font-weight: 500;
+}
+
+.hero-heading {
+  font-family: "Prata", serif;
+  font-size: 3rem;
+  font-weight: 700;
+  line-height: 1.5;
+  width: 65%;
+  letter-spacing: 0.2rem;
+}
+.hero-para {
+  padding: 2rem 0;
+  width: 65%;
+  line-height: 1.7;
+}
+.hamburger{
+  display: none;
+  cursor: pointer;
+}
+@media(max-width:880px){
+  .hero-heading,.hero-para{
+    width: inherit;
+  }
+  #get-in-touch{
+    display: none;
+  }
+  .hamburger{
+    display: block;
+  }
+  ul{
+    padding-left: 0 !important;
+    text-align: center;
+    display: none;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+  }
+  ul li{
+    padding: 0.5rem 0;
+  }
+  ul.show{
+    display: flex;
+  }
+}
+@media(max-width:440px){
+  .hero-heading{
+    font-size: 1.7rem;
+  }
+}
+.hero-logo {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 2rem 0;
+}
+
+.hero-logo>*{
+  padding:1rem 2rem;
+}
+
+@media(max-width:440px){
+  .hero-logo{
+    justify-content: space-around;
+  }
+
+  .hero-logo>*{
+    padding: 1rem 1rem;
+  }
+}
+
+@media(max-width:880px){
+  .hero-logo{
+    justify-content: space-evenly;
+  }
+}
+
+.demo-cards {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding:3rem 0;
+}
+
+.demo-card {
+  width: 45%;
+}
+
+.demo-card h1{
+    font-family: 'Prata', serif;
+    padding: 1.5rem 0;
+}
+
+.demo-card p{
+    line-height: 1.5;
+}
+
+@media(max-width:880px){
+  .demo-card{
+    width: 100%;
+  }
+  .demo-card>img{
+    width: 100%;
+  }
+  .demo-cards{
+    flex-direction: column;
+    gap: 3rem;
+  }
+}
+
+.about-cofounder{
+  column-count: 2;
+  column-gap: 5rem;
+  color:white;
+  line-height: 1.5;
+}
+
+.about-cofounder h1,.contact-area h1{
+  font-family: "Prata", serif;
+}
+
+@media(max-width:880px){
+  .about-cofounder{
+    column-count: 1;
+  }
+}
+
+.contact-area{
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.get-in-touch{
+  max-width: max-content;
+}
+
+footer{
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 4.5rem;
+  color: white;
+}
+
+@media(max-width:440px){
+  footer{
+    padding: 1rem 2rem;
+  }
+}
